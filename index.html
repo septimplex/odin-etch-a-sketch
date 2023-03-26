@@ -5,15 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="js.js" defer></script>
 </head>
 <body>
     <header id="header">
-        <h1>ETCH A SKETCH</h1>
+        <h1>~ ETCH - A - SKETCH ~</h1>
     </header>
 
-    <div id="grid-container"></div>
+    <div id="container">
+        <div id="buttons">
+            <div id="size">
+                <div id="size-container">
+                    <h3>GRID SIZE:</h3>
+                    <input id="input" type="number" min="1" max="100">
+                </div>
+                <div id="size-display">
+                    <h3 id="h3-size">16 x 16</h3>
+                </div>
+            </div>
+            <button class="button">BLACK</button>
+            <button class="button">RANDOM</button>
+            <button class="button">SHADE</button>
+            <button class="button">RESET</button>
+        </div>
+    
+        <div id="grid-container"></div>
+    </div>
+
+    <footer id="footer">
+        <p> &copy The Odin Project, 2023 </p>
+    </footer>
     
 </body>
 </html>
