@@ -20,9 +20,10 @@
         <div id="buttons">
             <div id="size">
                 <div id="size-container">
-                    <h3>GRID SIZE:</h3>
-                    <input id="input" type="number" min="1" max="100">
+                    <h3>GRID SIZE:</h3> 
+                    <input type="range" min="1" max="100" value="16" id="input" onchange="createGrid(this.value)";>  
                 </div>
+                
                 <div id="size-display">
                     <h3 id="h3-size">16 x 16</h3>
                 </div>
